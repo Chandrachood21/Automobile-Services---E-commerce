@@ -5,7 +5,7 @@
    $name = $_POST['name'];
    $email = $_POST['email'];
    $pwd = $_POST['password'];
-   $checkexists = "SELECT Name, Email from WTLogin where Email='$email'";
+   $checkexists = "SELECT Email from WTLogin where Email='$email'";
    $checkres = mysqli_query($connection, $checkexists);
    if(mysqli_num_rows($checkres)>0)
    {
