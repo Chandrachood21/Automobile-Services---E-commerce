@@ -54,10 +54,16 @@ h1{
     align-items: center;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 6%;
-    height: fit-content;
-    width: fit-content;
+    margin-top: 5%;
+    height: 600px;
+    width: 700px;
     background: linear-gradient(white, rgb(190, 190, 190));
     opacity: 0.8;
     border-radius: 50px;
+}
+
+.carts{
+    font-size: 400%;
+    text-align: center;
+    margin-top: 2%;
 }
