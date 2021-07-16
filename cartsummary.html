@@ -1,16 +1,13 @@
-<!--<link rel="stylesheet" href="try.css">
-<p class="carts"><b>Cart</b></p>-->
-<div id="demo">
+<link rel="stylesheet" href="try.css">
+<p class="carts"><b>Cart</b></p>
+<div class="rectangle" id="demo">
 </div>
 <script>
-    function displaycarts(){
+    window.onload = function displaycarts(){
     var finals = JSON.parse(localStorage.getItem("final"));
-    document.write(typeof(finals[0]));
-    /*for(var i=0; i<finals.length; i++)
+    for(var i=0; i<finals.length; i++)
     {
-            
-        document.write(finals[x]);
-            
-    }*/
+            document.getElementById("demo").innerHTML = finals[i];
+    }
     }
 </script>

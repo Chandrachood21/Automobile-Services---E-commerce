@@ -41,7 +41,7 @@ function oncalls(iden){
     var v = document.getElementById(iden).getElementsByTagName("input");
     for(var i=0; i<v.length; i++){
         if(v[i].checked){
-            finalstack.push(v[i]);
+            finalstack.push(v[i].name);
         }
     }
     //finalstack.push(temparray);
@@ -55,7 +55,7 @@ function sends(){
 
 function displaycart(){
     for(var x=0; x<finalstack.length; x++){
-            document.write(finalstack[x].id);
+            document.write(finalstack[x]);
     }
 }
 
