@@ -18,18 +18,3 @@ function sends(){
 }
 
 
-function displaycart(){
-    for(var x=0; x<finalstack.length; x++){
-            document.write(finalstack[x]);
-    }
-}
-
-function dispsum(){
-    for(var x=0; x<finalstack.length; x++){
-        for (var y=0; y<finalstack[x].length; y++){
-            totalsum = totalsum + pricesdict[finalstack[x][y].id];
-    
-        }
-    }
-    document.write(totalsum);
-}
