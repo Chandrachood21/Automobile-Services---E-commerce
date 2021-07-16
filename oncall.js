@@ -41,18 +41,21 @@ function oncalls(iden){
     var v = document.getElementById(iden).getElementsByTagName("input");
     for(var i=0; i<v.length; i++){
         if(v[i].checked){
-            temparray.push(v[i]);
+            finalstack.push(v[i]);
         }
     }
-    finalstack.push(temparray);
+    //finalstack.push(temparray);
 }
+
+function sends(){
+    localStorage.setItem("final",JSON.stringify(finalstack));
+    document.write(JSON.stringify(finalstack));
+}
+
 
 function displaycart(){
     for(var x=0; x<finalstack.length; x++){
-        for (var y=0; y<finalstack[x].length; y++){
-            document.write(finalstack[x][y].id);
-    
-        }
+            document.write(finalstack[x].id);
     }
 }
 
