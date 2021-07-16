@@ -1,13 +1,6 @@
 <link rel="stylesheet" href="try.css">
+<script src="cart.js"></script>
 <p class="carts"><b>Cart</b></p>
 <div class="rectangle" id="demo">
 </div>
-<script>
-    window.onload = function displaycarts(){
-    var finals = JSON.parse(localStorage.getItem("final"));
-    for(var i=0; i<finals.length; i++)
-    {
-            document.getElementById("demo").innerHTML += "<span>"+finals[i]+"</span><br>";
-    }
-    }
-</script>
+
