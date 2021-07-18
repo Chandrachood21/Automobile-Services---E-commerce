@@ -1,11 +1,12 @@
 <link rel="stylesheet" href="try.css">
 <script src="cart.js"></script>
 <p class="carts"><b>Cart</b></p>
-<div class="rectangle" id="demo">
+<div class="rectangle">
     <span style = "color:blue;font-size: 300%;padding: 5%;word-spacing: 270px;">Product_Items  Price(Rs.)    </style><br></span>
-  
+    <div id="demo">
+    </div>
 </div>
-<button class="logout" value="sendmail" id="sendmail" onclick="sendmail(); window.location='frontpage.html'">LogOut</button>
+<button class="logout" value="sendmail" id="sendmail" onclick="sendmail()">LogOut</button>
 <script src="https://smtpjs.com/v3/smtp.js"></script>
 <script type="text/javascript">
 function sendmail(){
@@ -22,7 +23,7 @@ function sendmail(){
                 Body: msg, 
             }) 
                 .then(function (message) {
-                    alert("successfully sent")
+                    window.location = 'frontpage.html';
             });
 }
 </script> 
