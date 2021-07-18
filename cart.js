@@ -18,7 +18,7 @@ var pricesdict = {
     "Flat Bottom":9000,
     "3-Spoke":6000,
     "4-Spoke":5000,
-    "Raceing Steering":12000,
+    "Racing Steering":12000,
     "ORVM":6000,
     "IRVM":3000,
     "Vertical-ORVM":4000,
