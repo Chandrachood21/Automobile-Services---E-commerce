@@ -2,7 +2,7 @@ var pricesdict = {
     "JK Tyre":5000,
     "MRF Tyre":5400,
     "Scorpion Tyre":6000,
-    "Yokohoma Tyre":6500,
+    "Yokohama Tyre":6500,
     "Alloy Wheel":10000,
     "Heavy Wheel":12000,
     "Peda Wheel":13000,

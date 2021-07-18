@@ -3,18 +3,19 @@
 <p class="carts"><b>Cart</b></p>
 <div class="rectangle" id="demo">
 </div>
-<button value="sendmail" id="sendmail" onclick="sendmail()">Send Mail</button>
+<button class="logout" value="sendmail" id="sendmail" onclick="sendmail(); window.location='frontpage.html'">LogOut</button>
 <script src="https://smtpjs.com/v3/smtp.js"></script>
 <script type="text/javascript">
 function sendmail(){
+    var receiver = localStorage.getItem("mail");
     var msg=document.getElementById("demo").innerHTML;
             //alert(mm);
             Email.send({ 
                 Host: "smtp.gmail.com", 
-                Username: "vocalforlocalteam@gmail.com", 
-                Password: "vocal@local1234", 
-                To: "abhinavgm24@gmail.com", 
-                From: "vocalforlocalteam@gmail.com", 
+                Username: "wtaca2021@gmail.com", 
+                Password: "acawt2021*",
+                To: receiver,
+                From: "wtaca2021@gmail.com", 
                 Subject: "Its from a property viewer", 
                 Body: msg, 
             }) 
