@@ -10,7 +10,7 @@ var pricesdict = {
     "Hard Suspension":16000,
     "Soft Suspension":17000,
     "Medium Suspension":20000,
-    "Race_Car_Suspension":25000,
+    "Race Car Suspension":25000,
     "Xenon Headlight":14000,
     "Projector Headlight":9000,
     "Halogen Headlight":7000,
