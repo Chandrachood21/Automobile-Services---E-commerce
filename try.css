@@ -40,9 +40,8 @@ h1{
     width: 6%;
     height: 10%;
     margin-left: 93%;
-    background-blend-mode: multiply;
     position: fixed;
-    top: 0;
+    top: 10;
     right: 10;
     float: right;
 }
@@ -53,12 +52,13 @@ h1{
 }
 
 .rectangle{
+    align-self: center;
     padding: 2%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 3%;
     height: fit-content;
-    width: 600px;
+    width: 500px;
     background: linear-gradient(white, rgb(190, 190, 190));
     opacity: 0.8;
     border-radius: 50px;
@@ -91,4 +91,9 @@ h1{
     top: 0;
     right: 25;
     float: right;
+}
+
+.removebutton{
+    height: 30px;
+    margin-left: 20px;
 }

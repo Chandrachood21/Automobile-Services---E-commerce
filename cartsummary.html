@@ -8,19 +8,18 @@
 <script type="text/javascript">
 function sendmail(){
     var receiver = localStorage.getItem("mail");
-    var msg=document.getElementById("demo").innerHTML;
-            //alert(mm);
+    var mailbody = document.getElementById("demo").innerHTML;
             Email.send({ 
                 Host: "smtp.gmail.com", 
                 Username: "wtaca2021@gmail.com", 
                 Password: "acawt2021*",
                 To: receiver,
                 From: "wtaca2021@gmail.com", 
-                Subject: "Its from a property viewer", 
-                Body: msg, 
+                Subject: "A copy of you receipt", 
+                Body: mailbody, 
             }) 
                 .then(function (message) {
-                    alert("successfully sent")
+                    window.location = 'frontpage.html';
             });
 }
 </script> 

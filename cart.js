@@ -41,7 +41,7 @@ window.onload = function displaycarts(){
     {
         var j = i+1;
         totalsum += pricesdict[finals[i]];
-        document.getElementById("demo").innerHTML += "<span class='innerleft'>"+j+". "+finals[i]+"</span><span class='innerright'>"+pricesdict[finals[i]]+"</span><br>";
+        document.getElementById("demo").innerHTML += "<span class='innerleft'>"+j+". "+finals[i]+"-"+pricesdict[finals[i]]+"</span><br>";
     }
     if(totalsum!=0){
         document.getElementById("demo").innerHTML += "<span class='innerleft'><br><br>Total Price: "+totalsum+"</span>";
