@@ -2,24 +2,27 @@
 <script src="cart.js"></script>
 <p class="carts"><b>Cart</b></p>
 <div class="rectangle" id="demo">
+    <span style = "color:blue;font-size: 300%;padding: 5%;word-spacing: 270px;">Product_Items  Price(Rs.)    </style><br></span>
+  
 </div>
-<button class="logout" value="sendmail" id="sendmail" onclick="sendmail()">LogOut</button>
+<button class="logout" value="sendmail" id="sendmail" onclick="sendmail(); window.location='frontpage.html'">LogOut</button>
 <script src="https://smtpjs.com/v3/smtp.js"></script>
 <script type="text/javascript">
 function sendmail(){
     var receiver = localStorage.getItem("mail");
-    var mailbody = document.getElementById("demo").innerHTML;
+    var msg=document.getElementById("demo").innerHTML;
+            //alert(mm);
             Email.send({ 
                 Host: "smtp.gmail.com", 
                 Username: "wtaca2021@gmail.com", 
                 Password: "acawt2021*",
                 To: receiver,
                 From: "wtaca2021@gmail.com", 
-                Subject: "A copy of you receipt", 
-                Body: mailbody, 
+                Subject: "Its from Automobile Custom Sevices", 
+                Body: msg, 
             }) 
                 .then(function (message) {
-                    window.location = 'frontpage.html';
+                    alert("successfully sent")
             });
 }
 </script> 
