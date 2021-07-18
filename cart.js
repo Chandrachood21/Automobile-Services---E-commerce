@@ -1,3 +1,4 @@
+
 var pricesdict = {
     "JK Tyre":5000,
     "MRF Tyre":5400,
@@ -10,7 +11,7 @@ var pricesdict = {
     "Hard Suspension":16000,
     "Soft Suspension":17000,
     "Medium Suspension":20000,
-    "Race Car Suspension":25000,
+    "Race_Car_Suspension":25000,
     "Xenon Headlight":14000,
     "Projector Headlight":9000,
     "Halogen Headlight":7000,
@@ -41,11 +42,10 @@ window.onload = function displaycarts(){
     {
         var j = i+1;
         totalsum += pricesdict[finals[i]];
-        document.getElementById("demo").innerHTML += "<span class='innerleft'>"+j+". "+finals[i]+"-"+pricesdict[finals[i]]+"</span><br>";
+        document.getElementById("demo").innerHTML += "<span class='innerleft'>"+j+". "+finals[i]+"</span><span class='innerright'>Rs."+pricesdict[finals[i]]+"</span><br>";
     }
     if(totalsum!=0){
-        document.getElementById("demo").innerHTML += "<span class='innerleft'><br><br>Total Price: "+totalsum+"</span>";
+        document.getElementById("demo").innerHTML += "<span class='innercenter'><br><br>Total Price: Rs."+totalsum+"</span>";
     }
     
 }
-
