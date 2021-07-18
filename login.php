@@ -9,8 +9,6 @@
    if(mysqli_num_rows($rs)>0)
     {
         echo "<script>window.location='try.html';</script>";
-        session_start();
-        $_SESSION['mail']=$email;
     }
     else
     {

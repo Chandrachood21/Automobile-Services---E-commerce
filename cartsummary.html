@@ -3,4 +3,23 @@
 <p class="carts"><b>Cart</b></p>
 <div class="rectangle" id="demo">
 </div>
-
+<button value="sendmail" id="sendmail" onclick="sendmail()">Send Mail</button>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script type="text/javascript">
+function sendmail(){
+    var msg=document.getElementById("demo").innerHTML;
+            //alert(mm);
+            Email.send({ 
+                Host: "smtp.gmail.com", 
+                Username: "vocalforlocalteam@gmail.com", 
+                Password: "vocal@local1234", 
+                To: "abhinavgm24@gmail.com", 
+                From: "vocalforlocalteam@gmail.com", 
+                Subject: "Its from a property viewer", 
+                Body: msg, 
+            }) 
+                .then(function (message) {
+                    alert("successfully sent")
+            });
+}
+</script> 
