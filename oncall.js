@@ -1,4 +1,4 @@
-var totalsum = 0;
+
 var finalstack = [];
 
 function oncalls(iden){
@@ -13,8 +13,8 @@ function oncalls(iden){
 }
 
 function sends(){
-    localStorage.setItem("final",JSON.stringify(finalstack));
-    localStorage.setItem("price",JSON.stringify(pricesdict));
+    sessionStorage.setItem("final",JSON.stringify(finalstack));
+    sessionStorage.setItem("price",JSON.stringify(pricesdict));
 }
 
 

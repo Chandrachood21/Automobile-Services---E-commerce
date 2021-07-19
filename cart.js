@@ -35,7 +35,7 @@ var pricesdict = {
 }
 
 var totalsum = 0;
-var finals = JSON.parse(localStorage.getItem("final"));
+var finals = JSON.parse(sessionStorage.getItem("final"));
 
 window.onload = function displaycarts(){
     for(var i=0; i<finals.length; i++)
